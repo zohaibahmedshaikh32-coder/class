@@ -1,0 +1,132 @@
+:root {
+    --background-color: #780000;
+    --primary-color: #003049;
+    --secondary-color: #669BBC;
+    --text-color: #242424;
+    --accent-color: #FDF0D5;
+    --gray-color: #b9b9b9;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+    margin-top: 10px;
+    
+}
+
+.header-navbar {
+    /* Temporary background color */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 0 20px;
+    box-shadow: 0 8px 30px rgb(0,0,0,0.12);
+}
+ul, li {
+    list-style-type: none;
+}
+
+.header-navbar-right ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.5s ease;
+}
+
+.header-navbar-right ul li {
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: all 0.5s ease;
+}
+
+.header-navbar-right ul li:hover {
+    color: var(--secondary-color);
+    scale: 0.9;
+}
+
+/* Hero Section */
+
+.hero-section {
+    width:auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 0 20px
+}
+.hero-left {
+    
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+}
+
+.hero-left h1 {
+    font-size: 72px;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.hero-left span {
+    font-weight: bolder;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.hero-left span:hover{
+    color: var(--background-color);
+}
+.her-left p{
+    width: 80%;
+}
+
+.hero-right {
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-right-image img{
+    width: 300px;
+    height: auto;
+}
+#checkbox-menu{
+    display: none;
+}
+@media (max-width: 780px)
+{
+    
+
+    .header-navbar-right .hamburger{
+        display: block;
+    }
+    
+    .hero-left{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    hero-left h1{
+        font-size: 56px;
+        width: 80%;
+        line-height: 0.9;
+    }
+    .hero-left p{
+        margin-top: 30px 0;
+    }
+
+    .hero-right-image img{
+        width: 300px;
+    }
+}
